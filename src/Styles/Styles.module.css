@@ -1,0 +1,15 @@
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, span, a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}

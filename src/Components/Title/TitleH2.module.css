@@ -1,0 +1,27 @@
+.title h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #5b4c5c;
+    display: inline-block;
+}
+
+.title {
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 6px;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #ef7674;
+}
+
+
+

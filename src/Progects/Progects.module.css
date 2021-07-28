@@ -1,0 +1,53 @@
+.progectsWrapper {
+    color: #5b4c5c;
+    display: inline-block;
+    width: 100%;
+    background: #f8f4f8;
+}
+
+.progects {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.progectsBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.progectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid;
+    min-width: 250px;
+}
+
+.progectBoxIcon {
+    height: 80px;
+    width: 80px;
+    margin: 0px auto 30px;
+    background-color: aqua;
+}
+
+.progectBoxText {
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 625px) {
+    .progectsBlock {
+        justify-content: center;
+    }
+}
+
+
+

@@ -1,0 +1,13 @@
+.outdorWorkWrapper {
+    background-color: coral;
+    width: 100%;
+}
+
+.outdorWork {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 80%;
+    flex-wrap: wrap;
+  align-items: center;
+}

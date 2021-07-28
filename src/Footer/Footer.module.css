@@ -1,0 +1,26 @@
+.footerWrapper {
+    background-color: burlywood;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footerBox{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+.footerBoxSocial{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}

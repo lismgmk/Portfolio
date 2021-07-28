@@ -1,0 +1,46 @@
+.skilsWrapper {
+    background-color: orange;
+    width: 100%;
+}
+
+.skils {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 80%;
+    flex-wrap: wrap;
+  align-items: center;
+}
+
+.skilsBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+.skilBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid;
+    min-width: 250px;
+}
+.skilBoxIcon{
+    height: 80px;
+    width: 80px;
+    margin: 0px auto 30px;
+    background-color: aqua;
+}
+
+.skilBoxText{
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 625px) {
+    .skilsBlock{
+        justify-content: center;
+    }
+}

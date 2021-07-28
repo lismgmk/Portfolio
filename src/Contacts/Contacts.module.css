@@ -1,0 +1,31 @@
+.сontactsWrapper {
+    background-color: yellow;
+    width: 100%;
+}
+
+.сontacts {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.сontactsForm {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.сontactsFormInput {
+    width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    .сontactsForm {
+        width: 100%
+    }
+}
