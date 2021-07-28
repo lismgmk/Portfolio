@@ -5,7 +5,7 @@ import {TitleH2} from "../Components/Title/TitleH2";
 
 export function Skils() {
     return (
-        <div className={style.skilsWrapper}>
+        <div className={`${style.skilsWrapper} ${elseStyle.rawBox}`}>
             <div className={`${style.skils} ${elseStyle.container}`}>
                 <TitleH2 text={'Навыки'}/>
                 <div className={style.skilsBlock}>

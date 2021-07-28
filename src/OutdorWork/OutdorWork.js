@@ -4,10 +4,10 @@ import {TitleH2} from "../Components/Title/TitleH2";
 
 export function OutdorWork() {
     return (
-        <div className={style.outdorWorkWrapper}>
+        <div className={`${style.outdorWorkWrapper} ${elseStyle.rawBox}`}>
             <div className={`${style.outdorWork} ${elseStyle.container}`}>
                 <TitleH2 text={'Возможность удаленной работы'}/>
-                <a href=''>Нанять меня</a>
+                <a className={elseStyle.btns} href=''>Нанять меня</a>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import {Nav} from "./Nav/Nav";
 
 export function Header() {
     return (
-        <div className={style.headerWrapper}>
+        <div className={`${style.headerWrapper} ${elseStyle.rawBox}`}>
             <div className={`${style.header} ${elseStyle.container}`}>
                 <Nav/>
             </div>
