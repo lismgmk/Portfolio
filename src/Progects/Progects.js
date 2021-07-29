@@ -1,10 +1,9 @@
-import style from "./Progects.module.css";
-import elseStyle from '../Styles/Styles.module.css';
+import style from "./Progects.module.scss";
+import elseStyle from '../Styles/Styles.module.scss';
 import {Progect} from "./Progect";
 import {TitleH2} from "../Components/Title/TitleH2";
 import socialImage from "../assets/images/socialNetwork.jpg";
 import toDoListImage from "../assets/images/todoList.jpg";
-
 
 
 export function Progects() {
@@ -15,21 +14,25 @@ export function Progects() {
         backgroundImage: `url(${toDoListImage})`
     };
 
-
+    // {`${style.progectsWrapper} ${elseStyle.rawBox}`}
     return (
-        <div className={`${style.progectsWrapper} ${elseStyle.rawBox}`}>
+        <div className={elseStyle.rawBox}>
             <div className={`${style.progects} ${elseStyle.container}`}>
-               <TitleH2 text={'Мои проекты'}/>
+                <TitleH2 text={'Мои проекты'}/>
                 <div className={style.progectsBlock}>
                     <Progect
-                       style={socialImageStyle}
+                        style={socialImageStyle}
                         name={'Social Network'}
-                        text={'React + TS'}/>
+                        text={'React + TS'}
+
+                    />
                     <Progect
                         style={toDoListImageStyle}
                         img={'image2'}
                         name={'ToDo List'}
-                        text={'React + TS'}/>
+                        text={'React + TS'}
+
+                    />
 
                 </div>
             </div>

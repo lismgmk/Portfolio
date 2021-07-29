@@ -1,4 +1,4 @@
-import style from "./Skils.module.css"
+import style from "./Skils.module.scss"
 
 export function Skil(props) {
     return (

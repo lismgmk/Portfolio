@@ -1,5 +1,5 @@
 import style from "./Main.module.css"
-import elseStyle from '../Styles/Styles.module.css'
+import elseStyle from '../Styles/Styles.module.scss'
 
 export function Main() {
     return (

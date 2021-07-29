@@ -1,0 +1,77 @@
+@import "src/Styles/sass/variables";
+@import "src/Styles/sass/mixins";
+
+.progects {
+  @include flex(column, center, center);
+
+  .progectsBlock {
+    width: 100%;
+    @include flex(raw, space-between, start);
+
+    .progectBox {
+      min-width: 400px;
+      background: $textColorHeaderFooter;
+      padding: 20px 36px 20px;;
+      border-bottom: #e6e6e6 5px solid;
+      @include flex(column, center, center);
+
+      .progectBoxIcon {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto 30px;
+        position: relative;
+        @include dackgroundImg();
+        @include flex(raw, center, center);
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-color: $backgroundImageColor;
+          visibility: visible;
+        }
+      }
+
+      .progectBoxText {
+        text-align: center;
+p{
+  @include text($fontFamily, 400, capitalize, 15px, 27px, $textColorP)
+}
+        /*.progectP{*/
+        /*    color: #897f8a;*/
+        /*    font-size: 15px;*/
+        /*    line-height: 27px;*/
+        /*    font-family: 'Open Sans', sans-serif;*/
+        /*}*/
+
+
+        .progectH3title {
+          @include text($fontFamily, 700, uppercase, 17px, 27px, $textColor);
+        }
+      }
+
+      @media screen and (max-width: 625px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

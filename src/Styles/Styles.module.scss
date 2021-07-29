@@ -1,0 +1,36 @@
+@import "sass/variables";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, span, a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rawBox {
+  background-color: #3b323c;
+  color: white;
+
+  &:nth-child(n+2):nth-child(-n+6):nth-child(odd) {
+    color: $textColor;
+    background-color: $textColorHeaderFooter;
+    width: 100%;
+  }
+
+  &:nth-child(n+2):nth-child(-n+6):nth-child(even) {
+    color: $textColorHeaderFooter;
+    background-color: $secondDackgroundColor;
+    width: 100%;
+  }
+
+  .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}

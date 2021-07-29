@@ -1,11 +1,11 @@
-import style from "./Skils.module.css";
-import elseStyle from '../Styles/Styles.module.css';
+import style from "./Skils.module.scss";
+import elseStyle from '../Styles/Styles.module.scss';
 import {Skil} from "./Skil";
 import {TitleH2} from "../Components/Title/TitleH2";
 
 export function Skils() {
     return (
-        <div className={`${style.skilsWrapper} ${elseStyle.rawBox}`}>
+        <div className={elseStyle.rawBox}>
             <div className={`${style.skils} ${elseStyle.container}`}>
                 <TitleH2 text={'Навыки'}/>
                 <div className={style.skilsBlock}>

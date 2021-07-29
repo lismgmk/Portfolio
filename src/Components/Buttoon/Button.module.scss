@@ -1,0 +1,19 @@
+@import "./src/Styles/sass/variables";
+@import "./src/Styles/sass/mixins";
+
+.btns {
+  @include text($fontFamily, 700, uppercase, 18px, 27px, $textColor);
+  border: 3px solid $textColor;
+  padding: 16px 22px;
+  display: inline-block;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background: $textColor;
+    color: $textColorHeaderFooter;
+    text-decoration: none;
+  }
+}

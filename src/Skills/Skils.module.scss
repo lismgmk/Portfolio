@@ -1,0 +1,41 @@
+@import "./src/Styles/sass/variables";
+@import "./src/Styles/sass/mixins";
+
+
+.skils {
+  @include flex(column, center, center);
+
+  .skilsBlock {
+    width: 100%;
+    @include flex(raw, space-between, start);
+    @media screen and (max-width: 625px) {
+      justify-content: center;
+    }
+
+    .skilBox {
+      @include flex(column, center, center);
+      background-color: $secondDackgroundColor;
+      min-width: 250px;
+        border-bottom: #e6e6e6 5px solid;
+      .skilBoxIcon {
+        height: 80px;
+        width: 80px;
+        margin: 0px auto 30px;
+        background-color: aqua;
+      }
+
+      .skilBoxText {
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
