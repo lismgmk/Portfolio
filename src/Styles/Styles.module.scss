@@ -11,8 +11,9 @@ h1, h2, h3, span, a {
 }
 
 .rawBox {
-  background-color: #3b323c;
+  background-color: $FooterHeaderDackgroundColor;
   color: white;
+  width: 100%;
 
   &:nth-child(n+2):nth-child(-n+6):nth-child(odd) {
     color: $textColor;
@@ -30,7 +31,7 @@ h1, h2, h3, span, a {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    //padding-top: 60px;
+    //padding-bottom: 60px;
   }
 }

@@ -1,0 +1,39 @@
+@import "./src/Styles/sass/variables";
+@import "./src/Styles/sass/mixins";
+
+
+.footer {
+  height: 300px;
+  @include flex(raw, center, center);
+
+  .footerBox {
+    width: 500px;
+    height: 300px;
+    @include flex(raw, space-between, center);
+
+
+    .footerBoxSocial {
+      color: $FooterHeaderDackgroundColor;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: $textColorHeaderFooter;
+      border-radius: 50%;
+      border: none;
+
+      .faCircle {
+        color: $FooterHeaderDackgroundColor;
+        @include flex(raw, center, center);
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+
+        &:hover {
+          color: $textColorHeaderFooter;
+          background-color: $FooterHeaderDackgroundColor;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

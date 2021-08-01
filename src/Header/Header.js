@@ -1,4 +1,4 @@
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import elseStyle from '../Styles/Styles.module.scss'
 import {Nav} from "./Nav/Nav";
 

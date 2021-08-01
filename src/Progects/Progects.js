@@ -16,7 +16,7 @@ export function Progects() {
 
     // {`${style.progectsWrapper} ${elseStyle.rawBox}`}
     return (
-        <div className={elseStyle.rawBox}>
+        <div id='progects' className={elseStyle.rawBox}>
             <div className={`${style.progects} ${elseStyle.container}`}>
                 <TitleH2 text={'Мои проекты'}/>
                 <div className={style.progectsBlock}>

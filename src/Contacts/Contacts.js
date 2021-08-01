@@ -5,7 +5,7 @@ import {TitleH2} from "../Components/Title/TitleH2";
 
 export function Contacts() {
     return (
-        <div className={elseStyle.rawBox}>
+        <div id='contacts' className={elseStyle.rawBox}>
             <div className={`${style.сontacts} ${elseStyle.container}`}>
                 <TitleH2 text={'Контакты'}/>
                 <form className={style.сontactsForm}>

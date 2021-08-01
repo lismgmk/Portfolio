@@ -3,7 +3,7 @@ import elseStyle from '../Styles/Styles.module.scss'
 
 export function Main() {
     return (
-        <div className={`${style.mainWrapper} ${elseStyle.rawBox}`}>
+        <div id='main' className={`${style.mainWrapper} ${elseStyle.rawBox}`}>
             <div className={`${style.main} ${elseStyle.container}`}>
                 <div className={style.mainText}>
                     <span>Привет</span>
