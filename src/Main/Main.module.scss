@@ -1,0 +1,46 @@
+@import "src/Styles/sass/variables";
+@import "src/Styles/sass/mixins";
+
+
+.mainWrapper {
+  &::before {
+    display: block;
+    content: "";
+    height: 280px;
+    margin: -80px 0 0;
+  }
+
+  .main {
+    @include flex(raw, space-between, center);
+
+    .mainText {
+      text-align: center;
+      background: $textColorHeaderFooter;
+      padding: 20px 36px 20px;;
+      border-bottom: #e6e6e6 5px solid;
+      min-width: 400px;
+
+    }
+
+    .mainFoto {
+      width: 350px;
+      height: 350px;
+      background-color: white;
+      @include dackgroundImg();
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $backgroundImageColor;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+

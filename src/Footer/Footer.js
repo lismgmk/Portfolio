@@ -7,6 +7,8 @@ import {faViber} from '@fortawesome/free-brands-svg-icons';
 import {faTelegramPlane} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {IconSocial} from "./IconSocial";
+import codeWars from "../assets/images/codewars.svg"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 export function Footer() {
@@ -15,8 +17,8 @@ export function Footer() {
         linkedIn: '',
         vk: '',
         instagram: '',
-        viber: '',
-        telegram: '',
+        codeWars: '',
+
     }
 
     return (
@@ -27,10 +29,15 @@ export function Footer() {
 
                     <IconSocial link={links.gitHub} name={faGithubAlt}/>
                     <IconSocial link={links.linkedIn} name={faLinkedin}/>
+                    <div className={style.footerBoxSocial}>
+                        <a href='' target="_blank">
+                            <div className={style.faCircle}>
+                                <img src={codeWars}></img>
+                            </div>
+                        </a>
+                    </div>
                     <IconSocial link={links.vk} name={faVk}/>
                     <IconSocial link={links.instagram} name={faInstagram}/>
-                    <IconSocial link={links.viber} name={faViber}/>
-                    <IconSocial link={links.telegram} name={faTelegramPlane}/>
 
                 </div>
             </div>

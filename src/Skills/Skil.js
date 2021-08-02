@@ -2,7 +2,7 @@ import style from "./Skils.module.scss"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
-export function Skil(props) {
+export const Skil = (props) => {
     return (
         <div className={style.skilBox}>
             <div className={style.skilBoxIcon}>
@@ -15,7 +15,7 @@ export function Skil(props) {
 
             <div className={style.skilBoxText}>
                 <h3>{props.skil}</h3>
-                <span>{props.text}</span>
+                <p>{props.text}</p>
             </div>
         </div>
     );

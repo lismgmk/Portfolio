@@ -4,6 +4,7 @@
 .progects {
   @include flex(column, center, center);
 
+
   .progectsBlock {
     width: 100%;
     @include flex(raw, space-between, start);
@@ -37,14 +38,6 @@
 
       .progectBoxText {
         text-align: center;
-p{
-  @include text($fontFamily, 400, capitalize, 15px, 27px, $textColorP)
-}
-
-
-        .progectH3title {
-          @include text($fontFamily, 700, uppercase, 17px, 27px, $textColor);
-        }
       }
 
       @media screen and (max-width: 625px) {

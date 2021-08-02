@@ -1,7 +1,12 @@
 @import "sass/variables";
+@import "sass/mixins";
 
 *, ::after, ::before {
   box-sizing: border-box;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 h1, h2, h3, span, a {
@@ -9,7 +14,12 @@ h1, h2, h3, span, a {
   margin: 0;
   padding: 0;
 }
-
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 .rawBox {
   background-color: $FooterHeaderDackgroundColor;
   color: white;
@@ -19,12 +29,14 @@ h1, h2, h3, span, a {
     color: $textColor;
     background-color: $textColorHeaderFooter;
     width: 100%;
+    padding-bottom: 80px;
   }
 
   &:nth-child(n+2):nth-child(-n+6):nth-child(even) {
     color: $textColorHeaderFooter;
     background-color: $secondDackgroundColor;
     width: 100%;
+    padding-bottom: 80px;
   }
 
   .container {
@@ -34,4 +46,15 @@ h1, h2, h3, span, a {
     //padding-top: 60px;
     //padding-bottom: 60px;
   }
+}
+
+p {
+  @include text($fontFamily, 400, inherit, 15px, 27px, $textColorP);
+}
+
+h3 {
+  @include text($fontFamily, 700, uppercase, 17px, 35px, $textColor);
+}
+h2{
+  margin-top: 50px;
 }

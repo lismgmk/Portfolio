@@ -1,30 +1,52 @@
-
+@import "./src/Styles/sass/variables";
+@import "./src/Styles/sass/mixins";
 
 .сontacts {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    width: 80%;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex(column, center, center);
+  width: 80%;
 
-}
-
-.сontactsForm {
-    width: 250px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.сontactsFormInput {
+  .сontactsInfoForm {
+    @include flex(row, space-between, start);
     width: 100%;
+
+    .сontactsInfo {
+      @include flex(column, center, start);
+        p{
+            text-align: left;
+            margin: 7px;
+            a{
+                @include text($fontFamily, 400, inherit, 15px, 27px, $textColorP);
+                padding-left: 20px;
+
+            }
+        }
+    }
+      .contactsMessage{
+          .сontactsForm {
+              width: 435px;
+              @include flex(column, space-between, flex-end);
+
+              .сontactsFormInput {
+                  width: 100%;
+                  background: $textColorHeaderFooter;
+                  color: $textColorP;
+                  padding: 15px 30px;
+                  margin-bottom: 18px;
+                  border: #cdc9ce 1px solid;
+              }
+
+              @media screen and (max-width: 450px) {
+                  width: 100%
+              }
+          }
+      }
+
+  }
+
 }
 
-@media screen and (max-width: 450px) {
-    .сontactsForm {
-        width: 100%
-    }
-}
+
+
+
+
+

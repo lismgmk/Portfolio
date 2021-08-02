@@ -1,15 +1,16 @@
 import style from './Header.module.scss'
 import elseStyle from '../Styles/Styles.module.scss'
-import {Nav} from "./Nav/Nav";
+import {NavLinc} from "./NavLinc";
 
-
-export function Header() {
+export function Header(props) {
     return (
         <div className={`${style.headerWrapper} ${elseStyle.rawBox}`}>
             <div className={`${style.header} ${elseStyle.container}`}>
-                <Nav/>
+                        <NavLinc name={'main'} linc={props.linkMain}/>
+                        <NavLinc name={'skils'} linc={props.linkSkils}/>
+                        <NavLinc name={'progects'} linc={props.linkProgects}/>
+                        <NavLinc name={'contacts'} linc={props.linkContacts}/>
             </div>
-
         </div>
     );
 }

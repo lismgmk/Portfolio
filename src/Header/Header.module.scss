@@ -3,41 +3,27 @@
 
 
 .headerWrapper {
-
   position: fixed;
   top: 0;
   z-index: 10;
   height: 140px;
 
   .header {
+    cursor: pointer;
+    @include flex(raw, space-around, center);
+    @include text($fontFamily, 800, uppercase, 19px, 140px, $textColorHeaderFooter);
     text-align: center;
-    .nav {
-      font-size: 16px;
-      text-decoration: none;
-      @include flex(raw, space-around, center);
-      transition: 1s;
-
-      & a {
-        @include text($fontFamily, 800, uppercase, 19px, 140px, $textColorHeaderFooter);
-           .anchor{
-               display: block;
-               position: relative;
-               top: -250px;
-               visibility: hidden;
-           }
-        &:hover {
-          @include text($fontFamily, 800, uppercase, 19px, 140px, $lineTitleColor);
-        }
+    transition: 1s;
+    .nav{
+      &:hover {
+        @include text($fontFamily, 800, uppercase, 19px, 140px, $lineTitleColor);
       }
-
     }
+
+
+
   }
 }
 
-a[id]:before {
-    content:"";
-    display:block;
-    height:150px;
-    margin:-130px 0 0;
-}
+
 
