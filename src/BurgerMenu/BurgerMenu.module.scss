@@ -1,13 +1,17 @@
 @import "./src/Styles/sass/variables";
 @import "./src/Styles/sass/mixins";
 
+.BurgerMenuButton{
+  width: 20px;
+  height: 20px;
+}
+.BurgerMenuWrapper {
 
-.headerWrapper {
   top: 0;
   z-index: 10;
-
+  height: 80px;
   @include flex(raw, center, center);
-  .header {
+  .BurgerMenu {
     width: 80%;
     margin: 0 auto;
     @include flex(raw, space-around, center);

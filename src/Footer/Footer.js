@@ -23,7 +23,7 @@ export function Footer() {
 
     return (
         <div className={elseStyle.rawBox}>
-            <div className={`${style.footer} ${elseStyle.container}`}>
+            <div className={style.footer}>
 
                 <div className={style.footerBox}>
 

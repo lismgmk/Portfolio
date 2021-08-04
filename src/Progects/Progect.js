@@ -7,6 +7,7 @@ import {Button} from "../Components/Buttoon/Button";
 export function Progect(props) {
     return (
         <div className={style.progectBox}>
+
             <div className={style.progectBoxIcon} style={props.style}>
                 <Button buttonName={'See project'} />
             </div>

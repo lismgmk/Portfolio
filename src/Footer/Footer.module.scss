@@ -3,12 +3,13 @@
 
 
 .footer {
-  height: 300px;
+  height: 150px;
   @include flex(raw, center, center);
+  margin: 0 auto;
+  width: 80%;
 
   .footerBox {
     width: 500px;
-    height: 300px;
     @include flex(raw, space-between, center);
 
 

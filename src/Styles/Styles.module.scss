@@ -3,6 +3,7 @@
 
 *, ::after, ::before {
   box-sizing: border-box;
+
 }
 
 a:not([class]) {
@@ -25,14 +26,14 @@ select {
   color: white;
   width: 100%;
 
-  &:nth-child(n+2):nth-child(-n+6):nth-child(odd) {
+  &:nth-child(n+4):nth-child(-n+8):nth-child(odd) {
     color: $textColor;
     background-color: $textColorHeaderFooter;
     width: 100%;
     padding-bottom: 80px;
   }
 
-  &:nth-child(n+2):nth-child(-n+6):nth-child(even) {
+  &:nth-child(n+4):nth-child(-n+8):nth-child(even) {
     color: $textColorHeaderFooter;
     background-color: $secondDackgroundColor;
     width: 100%;
@@ -43,7 +44,7 @@ select {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    //padding-top: 60px;
+    padding-top: 40px;
     //padding-bottom: 60px;
   }
 }
@@ -57,4 +58,7 @@ h3 {
 }
 h2{
   margin-top: 50px;
+}
+h1{
+  @include text($fontFamily, 700, uppercase, 48px, 57px, $textColorHeaderFooter);
 }

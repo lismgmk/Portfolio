@@ -7,7 +7,7 @@ import toDoListImage from "../assets/images/todoList.jpg";
 import * as React from "react";
 
 
-export const Progects = React.forwardRef((props, ref)=> {
+export const Progects = (props)=> {
     const socialImageStyle = {
         backgroundImage: `url(${socialImage})`
     };
@@ -16,7 +16,7 @@ export const Progects = React.forwardRef((props, ref)=> {
     };
 
     return (
-        <div ref={ref} id='progects' className={elseStyle.rawBox}>
+        <div id='progects' className={elseStyle.rawBox}>
             <div className={`${style.progects} ${elseStyle.container}`}>
                 <TitleH2 text={'My progects'}/>
                 <div className={style.progectsBlock}>
@@ -37,5 +37,5 @@ export const Progects = React.forwardRef((props, ref)=> {
         </div>
     )
 }
-)
+
 

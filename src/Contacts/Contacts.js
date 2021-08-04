@@ -16,10 +16,10 @@ import {faTelegram, faViber} from "@fortawesome/free-brands-svg-icons";
 import {Contact} from "./Contact";
 
 
-export const Contacts = React.forwardRef((props, ref) => {
+export const Contacts = (props, ) => {
 
         return (
-            <div ref={ref} id='contacts' className={elseStyle.rawBox}>
+            <div  id='contacts' className={elseStyle.rawBox}>
                 <div id='contacts' className={`${style.сontacts} ${elseStyle.container}`}>
                     <TitleH2 text={'Contacts'}/>
                     <div className={style.сontactsInfoForm}>
@@ -75,7 +75,7 @@ export const Contacts = React.forwardRef((props, ref) => {
             </div>
         )
     }
-)
+
 
 
 

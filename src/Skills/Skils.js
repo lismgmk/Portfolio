@@ -10,9 +10,9 @@ import * as React from "react";
 
 
 
-export const Skils = React.forwardRef((props, ref)=> {
+export const Skils = (props)=> {
     return (
-        <div ref={ref} id='skils' className={elseStyle.rawBox}>
+        <div  id='skils' className={elseStyle.rawBox}>
             <div className={`${style.skils} ${elseStyle.container}`}>
                 <TitleH2 text={'Skils'}/>
                 <div className={style.skilsBlock}>
@@ -25,6 +25,6 @@ export const Skils = React.forwardRef((props, ref)=> {
             </div>
         </div>
     );
-})
+}
 
 
