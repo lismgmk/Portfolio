@@ -3,19 +3,39 @@
 
 
 .mainWrapper {
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
   .main {
     text-align: center;
     @include flex(column, center, space-between);
+    @media screen and (max-width: 320px) {
+      width: 320px;
+      @include flex(column, center, center);
+    }
     .boxMain{
       @include flex(raw, space-between, center);
-
+      @media screen and (max-width: 1100px) {
+        @include flex(column, center, center);
+      }
       .mainText {
         text-align: center;
         background: $textColorHeaderFooter;
         padding: 20px 36px 20px;;
         border-bottom: #e6e6e6 5px solid;
-        min-width: 400px;
+        width: 400px;
+        @media screen and (max-width: 1100px) {
+          margin: 40px;
+        }
+        @media screen and (max-width: 700px) {
+          width: 320px;
+          @include flex(column, center, center);
+          padding: 10px;
+        }
+        @media screen and (max-width: 320px) {
+          width: 220px;
 
+        }
       }
 
       .mainFoto {
@@ -24,7 +44,14 @@
         background-color: white;
         @include dackgroundImg();
         position: relative;
-
+        @media screen and (max-width: 700px) {
+          width: 280px;
+          height: 280px;
+        }
+        @media screen and (max-width: 320px) {
+          width: 180px;
+          height: 180px;
+        }
         &::after {
           @include dackgroundSecond($backgroundImageColor)
         }

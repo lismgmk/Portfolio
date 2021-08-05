@@ -3,6 +3,7 @@
 
 .sliderMain {
   overflow: hidden;
+display: block;
   .customSlideWrapper {
     @include flex(column, center, center);
     @include dackgroundImg();

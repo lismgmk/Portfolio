@@ -7,7 +7,9 @@
   @include flex(raw, center, center);
   margin: 0 auto;
   width: 80%;
-
+  @media screen and (max-width: 320px) {
+    width: 90%;
+  }
   .footerBox {
     width: 500px;
     @include flex(raw, space-between, center);

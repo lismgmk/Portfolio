@@ -8,9 +8,15 @@
   .сontactsInfoForm {
     @include flex(row, space-between, start);
     width: 100%;
-
+    @media screen and (max-width: 1100px) {
+      @include flex(column, center, center);
+      margin-bottom: 35px;
+    }
     .сontactsInfo {
       @include flex(column, center, start);
+      @media screen and (max-width: 1100px) {
+                margin-bottom: 35px;
+      }
         p{
             text-align: left;
             margin: 7px;

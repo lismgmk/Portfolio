@@ -30,7 +30,7 @@ export const Main = (props) => {
                         <p>
                             I am react developer
                         </p>
-                        <Button buttonName={'Download Printable Resume'} />
+                        <Button buttonName={'Download Resume'} />
                     </div>
                 </div>
 

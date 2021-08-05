@@ -5,9 +5,11 @@
 .headerWrapper {
   top: 0;
   z-index: 10;
-
+position: sticky;
+  display: block;
   @include flex(raw, center, center);
   .header {
+    padding: 10px 0px;
     width: 80%;
     margin: 0 auto;
     @include flex(raw, space-around, center);

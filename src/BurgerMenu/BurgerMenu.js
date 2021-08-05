@@ -1,30 +1,48 @@
 import React from 'react';
 import style from './BurgerMenu.module.scss'
-import {AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Box, IconButton, Link, Menu, MenuItem, Toolbar, Typography} from "@material-ui/core";
 import {Component} from "react";
 import {makeStyles} from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import { withStyles } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        // position: 'sticky',
         backgroundColor: '#3b323c',
+
     },
     menuButton: {
         marginRight: theme.spacing(3),
 
     },
     menu: {
+
         display: 'flex',
         justifyContent: 'space-between',
-        position: "sticky",
-        zIndex: 15,
+    },
+    styledMenuItem: {
+        width: '100%',
+        display: 'inline-block',
+        borderBottom: '1px solid',
+        textAlign: 'center',
+        color: '#3b323c',
+        textDecoration: 'none',
+        cursor: 'pointer',
+        fontFamily: '\'Open Sans\', sans-serif',
+        fontSize: '25px',
+        textTransform: 'upperCase',
+        padding: '5px',
+        fontWeight: '400',
     }
 }));
 
 
-export function BurgerMenu(props) {
+export function BurgerMenu() {
+
+    const nameId = [
+        'main', 'progects', 'skils', 'contacts'
+    ]
 
     const classes = useStyles();
 
@@ -36,24 +54,23 @@ export function BurgerMenu(props) {
 
     const handleClose = () => {
         setAnchorEl(null);
+
     };
 
-    return (<div >
-
-        <Box display={{xs: 'block', sm: 'none'}}
-             position="sticky"
-        >
+    return (
+        <div className={style.styledMenuItem}>
             <AppBar
-                    className={classes.root}
+                className={classes.root}
             >
+
                 <Toolbar variant="dense"
                          className={classes.menu}
-
+                         position='sticky'
                 >
-                    <Typography variant="h6" color="inherit">
+                    <Typography
+                        variant="h6" color="inherit">
                         Menu
                     </Typography>
-
 
                     <IconButton edge="start" className={classes.menuButton}
                                 color="inherit"
@@ -65,24 +82,18 @@ export function BurgerMenu(props) {
                             onClick={handleClick}
                         />
                     </IconButton>
-
                 </Toolbar>
-            </AppBar>
 
-
-
-        </Box>
-            <div className={style.styledMenuItem }>
                 <Menu
-
-                    minWidth={'100%'}
+                    className={classes.menu}
                     PaperProps={{
                         style: {
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
                             width: '100%',
                             paddingLeft: '30px',
-                            marginTop: '60px',
-                            // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-
+                            marginTop: '30px',
                         },
                     }}
                     id="customized-menu"
@@ -91,13 +102,21 @@ export function BurgerMenu(props) {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    {nameId.map(i => {
+                        return (
+                            <Link
+                                className={classes.styledMenuItem}
+                                href={`#${i}`}
+                                width={1}
+                                onClick={handleClose}
+                            >
+                                {i}
+                            </Link>
+                        )
+                    })}
                 </Menu>
-            </div>
-
-    </div>
-    );
+            </AppBar>
+        </div>
+    )
 }
 

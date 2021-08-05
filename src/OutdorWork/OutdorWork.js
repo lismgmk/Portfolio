@@ -7,7 +7,7 @@ export function OutdorWork() {
     return (
         <div  className={elseStyle.rawBox}>
             <div className={`${style.outdorWork} ${elseStyle.container}`}>
-                <TitleH2 text={'The ability to work online'}/>
+                <TitleH2 text={'online work'}/>
                 <Button buttonName={'hire me'} />
             </div>
         </div>

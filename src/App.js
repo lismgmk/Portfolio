@@ -1,5 +1,4 @@
 import {Header} from "./Header/Header";
-import style from "./App.module.css"
 import {Main} from "./Main/Main";
 import {Skils} from "./Skills/Skils";
 import {Progects} from "./Progects/Progects";
@@ -14,17 +13,19 @@ import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
 function App() {
 
     return (
-        <div>
-            <SliderMain/>
-            <BurgerMenu/>
-            <Header/>
-            <Main />
-            <Skils />
-            <Progects />
-            <OutdorWork/>
-            <Contacts />
-            <Footer/>
-        </div>
+       <>
+           <SliderMain/>
+           <Header/>
+           <BurgerMenu/>
+           <Main />
+           <Skils />
+           <Progects />
+           <OutdorWork/>
+           <Contacts />
+           <Footer/>
+       </>
+
+
     )
 }
 

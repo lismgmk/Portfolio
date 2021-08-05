@@ -8,14 +8,22 @@
   .progectsBlock {
     width: 100%;
     @include flex(raw, space-between, start);
-
+    @media screen and (max-width: 1100px) {
+      @include flex(column, center, center);
+    }
     .progectBox {
-      min-width: 400px;
+      width: 400px;
       background: $textColorHeaderFooter;
       padding: 20px 36px 20px;;
       border-bottom: #e6e6e6 5px solid;
       @include flex(column, center, center);
-
+      @media screen and (max-width: 1100px) {
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: 320px) {
+        width: 220px;
+padding: 10px 0px 0px 0px;
+      }
       .progectBoxIcon {
         height: 300px;
         width: 300px;
@@ -23,7 +31,10 @@
         position: relative;
         @include dackgroundImg();
         @include flex(raw, center, center);
-
+        @media screen and (max-width: 320px) {
+          width: 180px;
+          height: 180px;
+        }
         &::after {
           @include dackgroundSecond($backgroundImageColor)
         }

@@ -1,32 +1,12 @@
 @import "./src/Styles/sass/variables";
 @import "./src/Styles/sass/mixins";
 
-.BurgerMenuButton{
-  width: 20px;
-  height: 20px;
-}
-.BurgerMenuWrapper {
 
-  top: 0;
-  z-index: 10;
-  height: 80px;
-  @include flex(raw, center, center);
-  .BurgerMenu {
-    width: 80%;
-    margin: 0 auto;
-    @include flex(raw, space-around, center);
-    .nav
-    a{
-      cursor: pointer;
-      @include text($fontFamily, 800, uppercase, 19px, 20px, $textColorHeaderFooter);
-      text-align: center;
-      transition: 1s;
-      &:hover {
-        @include text($fontFamily, 800, uppercase, 19px, 20px, $lineTitleColor);
-      }
-    }
+.styledMenuItem{
+ display: none;
+  @media screen and (max-width: 600px) {
+    display: block;
   }
 }
-
 
 
