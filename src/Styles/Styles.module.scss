@@ -15,12 +15,14 @@ h1, h2, h3, span, a {
   margin: 0;
   padding: 0;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 .rawBox {
   background-color: $FooterHeaderDackgroundColor;
   color: white;
@@ -33,8 +35,8 @@ select {
     width: 100%;
 
     @media screen and (max-width: 720px) {
-    padding-bottom: 0px;
-  }
+      padding-bottom: 0px;
+    }
   }
 
   &:nth-child(n+4):nth-child(-n+8):nth-child(even) {
@@ -65,9 +67,11 @@ p {
 h3 {
   @include text($fontFamily, 700, uppercase, 17px, 35px, $textColor);
 }
-h2{
+
+h2 {
   margin-top: 50px;
 }
-h1{
+
+h1 {
   @include text($fontFamily, 700, uppercase, 48px, 57px, $textColorHeaderFooter);
 }

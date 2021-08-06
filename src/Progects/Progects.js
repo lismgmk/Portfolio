@@ -23,13 +23,13 @@ export const Progects = (props)=> {
                     <Progect
                         style={socialImageStyle}
                         name={'Social Network'}
-                        text={'React + TS'}
+                        text={'My social network is an opportunity to communicate with friends, listen to music, exchange photos and likes, as well as make new acquaintances.'}
                     />
                     <Progect
                         style={toDoListImageStyle}
                         img={'image2'}
                         name={'ToDo List'}
-                        text={'React + TS'}
+                        text={'My todo list will help you not to forget about your business'}
                     />
 
                 </div>

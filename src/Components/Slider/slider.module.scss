@@ -3,7 +3,8 @@
 
 .sliderMain {
   overflow: hidden;
-display: block;
+  display: block;
+
   .customSlideWrapper {
     @include flex(column, center, center);
     @include dackgroundImg();
@@ -14,16 +15,19 @@ display: block;
     &::after {
       @include dackgroundSecond(rgba(84, 72, 72, 0.8))
     }
+
     h1, p {
       position: relative;
       z-index: 1;
-
+      text-align: center;
+      width: 80%;
     }
 
     p {
       color: $textColorHeaderFooter;
       font-size: 18px;
     }
+
     .btns {
       margin-top: 40px;
       @include text($fontFamily, 700, uppercase, 18px, 27px, $textColorHeaderFooter);
@@ -34,6 +38,7 @@ display: block;
       position: relative;
       z-index: 1;
       background-color: $lineTitleColor;
+
       &:hover {
         background-color: $textColorHeaderFooter;
         color: $lineTitleColor;

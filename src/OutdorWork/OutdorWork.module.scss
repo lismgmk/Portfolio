@@ -1,6 +1,6 @@
 @import "./src/Styles/sass/mixins";
 
 .outdorWork {
-    @include flex(column, center, center);
-
+  @include flex(column, center, center);
+  padding-bottom: 35px;
 }

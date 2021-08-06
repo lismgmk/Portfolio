@@ -1,25 +1,18 @@
 import React from 'react';
 import style from './BurgerMenu.module.scss'
-import {AppBar, Box, IconButton, Link, Menu, MenuItem, Toolbar, Typography} from "@material-ui/core";
-import {Component} from "react";
+import {AppBar, Box, IconButton, Link, Menu, Toolbar, Typography} from "@material-ui/core";
 import {makeStyles} from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        // position: 'sticky',
         backgroundColor: '#3b323c',
-
-    },
-    menuButton: {
-        marginRight: theme.spacing(3),
-
     },
     menu: {
-
         display: 'flex',
         justifyContent: 'space-between',
+        alignItems: 'center'
     },
     styledMenuItem: {
         width: '100%',
@@ -62,7 +55,6 @@ export function BurgerMenu() {
             <AppBar
                 className={classes.root}
             >
-
                 <Toolbar variant="dense"
                          className={classes.menu}
                          position='sticky'
@@ -85,15 +77,14 @@ export function BurgerMenu() {
                 </Toolbar>
 
                 <Menu
-                    className={classes.menu}
                     PaperProps={{
                         style: {
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
                             width: '100%',
-                            paddingLeft: '30px',
                             marginTop: '30px',
+                            paddingBottom: '30px',
                         },
                     }}
                     id="customized-menu"

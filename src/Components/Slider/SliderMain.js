@@ -24,21 +24,21 @@ export default function SliderMain() {
         {
             backgroundImage: {backgroundImage: `url(${slide1})`},
             text: "About me",
-            description: "I like React",
+            description: "Hello, I am a person who has a strong passion for programming.",
             buttonName: "know me better",
             nameId: 'main'
         },
         {
             backgroundImage: {backgroundImage: `url(${slide2})`},
             text: "My progect",
-            description: "I like React",
+            description: "My freelance projects",
             buttonName: "view my work",
             nameId: 'progects'
         },
         {
             backgroundImage: {backgroundImage: `url(${slide3})`},
-            text: "About me",
-            description: "I like React",
+            text: "My skills",
+            description: "I am improving my skills in this direction and expanding them with new technologies.",
             buttonName: "what i do",
             nameId: 'skils'
         }
@@ -58,9 +58,6 @@ export default function SliderMain() {
                 />
             </>
         })
-
-
-
 
     return (
         <div className={` ${style.sliderMain} `}>

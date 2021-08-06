@@ -16,7 +16,6 @@ export function IconSocial(props) {
                     </div>
                 </a>
             </div>
-
         </>
     )
 }

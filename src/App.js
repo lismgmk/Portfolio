@@ -13,19 +13,17 @@ import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
 function App() {
 
     return (
-       <>
-           <SliderMain/>
-           <Header/>
-           <BurgerMenu/>
-           <Main />
-           <Skils />
-           <Progects />
-           <OutdorWork/>
-           <Contacts />
-           <Footer/>
-       </>
-
-
+        <>
+            <SliderMain/>
+            <Header/>
+            <BurgerMenu/>
+            <Main/>
+            <Skils/>
+            <Progects/>
+            <OutdorWork/>
+            <Contacts/>
+            <Footer/>
+        </>
     )
 }
 

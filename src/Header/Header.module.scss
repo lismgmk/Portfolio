@@ -5,20 +5,23 @@
 .headerWrapper {
   top: 0;
   z-index: 10;
-position: sticky;
+  position: sticky;
   display: block;
   @include flex(raw, center, center);
+
   .header {
     padding: 10px 0px;
     width: 80%;
     margin: 0 auto;
     @include flex(raw, space-around, center);
+
     .nav
-    a{
+    a {
       cursor: pointer;
       @include text($fontFamily, 800, uppercase, 19px, 20px, $textColorHeaderFooter);
       text-align: center;
       transition: 1s;
+
       &:hover {
         @include text($fontFamily, 800, uppercase, 19px, 20px, $lineTitleColor);
       }

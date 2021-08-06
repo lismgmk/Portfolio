@@ -3,12 +3,10 @@ import elseStyle from '../Styles/Styles.module.scss';
 import {faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 import {faVk} from '@fortawesome/free-brands-svg-icons';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import {faViber} from '@fortawesome/free-brands-svg-icons';
-import {faTelegramPlane} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {IconSocial} from "./IconSocial";
 import codeWars from "../assets/images/codewars.svg"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 
 export function Footer() {
@@ -24,9 +22,7 @@ export function Footer() {
     return (
         <div className={elseStyle.rawBox}>
             <div className={style.footer}>
-
                 <div className={style.footerBox}>
-
                     <IconSocial link={links.gitHub} name={faGithubAlt}/>
                     <IconSocial link={links.linkedIn} name={faLinkedin}/>
                     <div className={style.footerBoxSocial}>
