@@ -31,7 +31,9 @@
           .сontactsForm {
               width: 435px;
               @include flex(column, space-between, flex-end);
-
+            @media screen and (max-width: 450px) {
+              @include flex(column, space-between, center);
+            }
               .сontactsFormInput {
                   width: 100%;
                   background: $textColorHeaderFooter;

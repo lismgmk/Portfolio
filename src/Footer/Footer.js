@@ -12,10 +12,10 @@ import codeWars from "../assets/images/codewars.svg"
 export function Footer() {
     const links = {
         gitHub: 'https://github.com/lismgmk',
-        linkedIn: '',
-        vk: '',
+        linkedIn: 'https://www.linkedin.com/in/uladzimir-lis-8497a41a1/',
+        vk: 'https://vk.com/id8610315#',
         instagram: '',
-        codeWars: '',
+        codeWars: 'https://www.codewars.com/users/lismgmk',
 
     }
 
