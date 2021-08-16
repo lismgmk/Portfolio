@@ -34,7 +34,7 @@ export const Contacts = () => {
                             info={''}
                         />
                         <Contact
-                            link={'tg://resolve?domain=<lismgmk>'}
+                            link={'https://t.me/lismgmk'}
                             name={'Send me a message...'}
                             elem={faTelegram}
                             info={''}

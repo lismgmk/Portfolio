@@ -18,14 +18,16 @@ export const Progects = (props)=> {
     return (
         <div id='progects' className={elseStyle.rawBox}>
             <div className={`${style.progects} ${elseStyle.container}`}>
-                <TitleH2 text={'My progects'}/>
+                <TitleH2 text={'My projects'}/>
                 <div className={style.progectsBlock}>
                     <Progect
+                        href={'https://lismgmk.github.io/Social-Network/'}
                         style={socialImageStyle}
                         name={'Social Network'}
                         text={'My social network is an opportunity to communicate with friends, listen to music, exchange photos and likes, as well as make new acquaintances.'}
                     />
                     <Progect
+                        href={'https://lismgmk.github.io/ToDoList/'}
                         style={toDoListImageStyle}
                         img={'image2'}
                         name={'ToDo List'}

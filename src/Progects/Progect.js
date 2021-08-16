@@ -6,7 +6,7 @@ export function Progect(props) {
     return (
         <div className={style.progectBox}>
             <div className={style.progectBoxIcon} style={props.style}>
-                <Button buttonName={'See project'}/>
+                <Button href={props.href} buttonName={'See project'}/>
             </div>
             <div className={style.progectBoxText}>
                 <h3 className={style.progectH3title}>{props.name}</h3>

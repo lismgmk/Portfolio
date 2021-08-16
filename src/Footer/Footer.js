@@ -26,7 +26,7 @@ export function Footer() {
                     <IconSocial link={links.gitHub} name={faGithubAlt}/>
                     <IconSocial link={links.linkedIn} name={faLinkedin}/>
                     <div className={style.footerBoxSocial}>
-                        <a href='' target="_blank">
+                        <a href='https://www.codewars.com/users/lismgmk' target="_blank">
                             <div className={style.faCircle}>
                                 <img src={codeWars}></img>
                             </div>
