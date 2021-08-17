@@ -60,7 +60,7 @@ select {
   }
 }
 
-p {
+p, h6{
   @include text($fontFamily, 400, inherit, 15px, 27px, $textColorP);
 }
 
