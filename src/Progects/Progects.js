@@ -6,6 +6,7 @@ import socialImage from "../assets/images/socialNetwork.jpg";
 import toDoListImage from "../assets/images/todoList.jpg";
 import customItem from "../assets/images/customItems.jpg";
 import pokraskino from "../assets/images/pokraskino.jpg";
+import portfolio from "../assets/images/portfolio.jpg";
 import * as React from "react";
 import slide1 from "../assets/images/slide1me.jpg";
 import slide2 from "../assets/images/slide2progects.jpg";
@@ -27,6 +28,12 @@ export const Progects = (props) => {
             'creating new todolists with nested tasks',
             'create-read-update-delete operations with tudulists and tasks, sending to the server',
             'login logout, handling errors sending requests',
+        ],
+        portfolio: [
+            'Use the site on a mobile phone. Adaptive layout',
+            'Use site navigation',
+            'Use links and buttons',
+            'Use the feedback form. in the process...',
         ],
         customComponents: [
             'creation of custom inputs, selectors, buttons',
@@ -62,6 +69,17 @@ export const Progects = (props) => {
             buttonNameCode: 'see code',
         },
         {
+            style: {backgroundImage: `url(${portfolio})`},
+            name: "Portfolio",
+            href2project: 'https://lismgmk.github.io/Portfolio/',
+            href2code: 'https://github.com/lismgmk/Portfolio',
+            usedLibraries: 'REACT, SASS, MATERIAL UI, react-router',
+            func: funcActions.portfolio,
+            buttonNameProject: 'see progect*',
+            buttonNameCode: 'see code',
+        },
+
+        {
             style: {backgroundImage: `url(${customItem})`},
             name: "Custom elements",
             href2project: 'https://lismgmk.github.io/ignat/',
@@ -70,7 +88,9 @@ export const Progects = (props) => {
             func: funcActions.customComponents,
             buttonNameProject: 'see progect*',
             buttonNameCode: 'see code',
-        },{
+        },
+
+        {
             style: {backgroundImage: `url(${pokraskino})`},
             name: "Landing page for business",
             href2project: 'https://pokraskino.by/',
