@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.278f3aae.chunk.css",
-    "main.js": "/Portfolio/static/js/main.88287fd3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.88287fd3.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.7aad9c98.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.7aad9c98.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.7527a850.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.7527a850.js.map",
     "static/css/2.80bf6fd4.chunk.css": "/Portfolio/static/css/2.80bf6fd4.chunk.css",
@@ -16,6 +16,7 @@
     "static/js/2.8044a768.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8044a768.chunk.js.LICENSE.txt",
     "static/media/codewars.89fb91ea.svg": "/Portfolio/static/media/codewars.89fb91ea.svg",
     "static/media/customItems.954e735f.jpg": "/Portfolio/static/media/customItems.954e735f.jpg",
+    "static/media/exchange.cc3f742f.jpg": "/Portfolio/static/media/exchange.cc3f742f.jpg",
     "static/media/me.fbd1153a.jpg": "/Portfolio/static/media/me.fbd1153a.jpg",
     "static/media/pokraskino.5bf6fa62.jpg": "/Portfolio/static/media/pokraskino.5bf6fa62.jpg",
     "static/media/portfolio.4dbc1378.jpg": "/Portfolio/static/media/portfolio.4dbc1378.jpg",
@@ -31,6 +32,6 @@
     "static/css/2.80bf6fd4.chunk.css",
     "static/js/2.8044a768.chunk.js",
     "static/css/main.278f3aae.chunk.css",
-    "static/js/main.88287fd3.chunk.js"
+    "static/js/main.7aad9c98.chunk.js"
   ]
 }
