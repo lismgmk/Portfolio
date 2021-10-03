@@ -17,13 +17,13 @@ import slide3 from "../assets/images/slide3skils.png";
 export const Progects = (props) => {
 
     const funcActions = {
-        SocialNetwork: [
-            'Log in and log out',
-            'Download from server and see your profile',
-            'Change the status of your profile',
-            'Write a private message',
-            'Download from the server and see the profiles of other users',
-            'Subscribing and unsubscribing to a user'
+        CryptocurrencyRates: [
+            'done in 4 days',
+            'download from server and see coins',
+            'course charts',
+            'personal wallet',
+            'delta counting in wallet',
+            'pagination',
         ],
         toDoList: [
             'creating new todolists with nested tasks',
@@ -56,11 +56,11 @@ export const Progects = (props) => {
     const projectsInfo = [
         {
             style: {backgroundImage: `url(${socialImage})`},
-            name: "Social Network",
-            href2project: 'https://lismgmk.github.io/Social-Network/',
-            href2code: 'https://github.com/lismgmk/Social-Network',
-            usedLibraries: 'REACT, REDUX, TYPESCRIPT, AXIOS, MATERIAL UI, REDUX-FORM, react-router, redux-thunk, reselect',
-            func: funcActions.SocialNetwork,
+            name: "Cryptocurrency Rates",
+            href2project: 'https://lismgmk.github.io/crypto',
+            href2code: 'https://github.com/lismgmk/crypto',
+            usedLibraries: 'REACT, REDUX, TYPESCRIPT, AXIOS, react-router',
+            func: funcActions.CryptocurrencyRates,
             buttonNameProject: 'see progect*',
             buttonNameCode: 'see code',
         },
