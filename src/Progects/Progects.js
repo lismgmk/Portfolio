@@ -7,6 +7,7 @@ import toDoListImage from "../assets/images/todoList.jpg";
 import customItem from "../assets/images/customItems.jpg";
 import pokraskino from "../assets/images/pokraskino.jpg";
 import portfolio from "../assets/images/portfolio.jpg";
+import exchange from "../assets/images/exchange.jpg";
 import * as React from "react";
 import slide1 from "../assets/images/slide1me.jpg";
 import slide2 from "../assets/images/slide2progects.jpg";
@@ -28,6 +29,11 @@ export const Progects = (props) => {
             'creating new todolists with nested tasks',
             'create-read-update-delete operations with tudulists and tasks, sending to the server',
             'login logout, handling errors sending requests',
+        ],
+        exchange: [
+            'getting a list of currencies',
+            'sorting, deleting, adding new currencies, copying currency data to the clipboard',
+            'validation of successful and incorrect actions',
         ],
         portfolio: [
             'Use the site on a mobile phone. Adaptive layout',
@@ -65,6 +71,16 @@ export const Progects = (props) => {
             href2code: 'https://github.com/lismgmk/ToDoList',
             usedLibraries: 'REACT, Redux Toolkit, TYPESCRIPT, AXIOS, MATERIAL UI, formik, react-router, redux-thunk, immer, uuid',
             func: funcActions.toDoList,
+            buttonNameProject: 'see progect*',
+            buttonNameCode: 'see code',
+        },
+        {
+            style: {backgroundImage: `url(${exchange})`},
+            name: " Exchange rates",
+            href2project: 'https://lismgmk.github.io/ChangeCurrencu/',
+            href2code: 'https://github.com/lismgmk/ChangeCurrencu',
+            usedLibraries: 'REACT, REDUX, TYPESCRIPT, AXIOS, MATERIAL UI, react-router,',
+            func: funcActions.exchange,
             buttonNameProject: 'see progect*',
             buttonNameCode: 'see code',
         },
