@@ -34,9 +34,15 @@
         &:hover {
           color: $textColorHeaderFooter;
           background-color: $FooterHeaderDackgroundColor;
-          border-radius: 50%;
+          border-radius: 20%;
         }
       }
     }
+  }
+}
+.cwContainer{
+  fill: $FooterHeaderDackgroundColor;
+  &:hover {
+    fill: $textColorHeaderFooter;
   }
 }

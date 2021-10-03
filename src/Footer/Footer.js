@@ -5,7 +5,7 @@ import {faVk} from '@fortawesome/free-brands-svg-icons';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {IconSocial} from "./IconSocial";
-// import codeWars from "../assets/images/codewars.svg"
+import {CodeWars} from "../assets/images/CodeWarsSVG";
 
 
 
@@ -26,10 +26,9 @@ export function Footer() {
                     <IconSocial link={links.gitHub} name={faGithubAlt}/>
                     <IconSocial link={links.linkedIn} name={faLinkedin}/>
                     <div className={style.footerBoxSocial}>
+
                         <a href='https://www.codewars.com/users/lismgmk' target="_blank">
-                            <div className={style.faCircle}>
-                                {/*<img src={codeWars}></img>*/}
-                            </div>
+                            <CodeWars/>
                         </a>
                     </div>
                     <IconSocial link={links.vk} name={faVk}/>
